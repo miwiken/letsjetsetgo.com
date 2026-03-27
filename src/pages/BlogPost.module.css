@@ -1,0 +1,82 @@
+.page {
+  padding: 80px 0;
+}
+
+.loading,
+.notFound {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.notFound h1 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.notFound a {
+  color: var(--color-primary);
+}
+
+.article {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.back {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  margin-bottom: 32px;
+  transition: color 0.15s;
+}
+
+.back:hover {
+  color: var(--color-primary);
+}
+
+.date {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 12px;
+}
+
+.article h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: 32px;
+}
+
+.hero {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.content p {
+  margin-bottom: 1.5em;
+}
+
+.content h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 2em 0 0.5em;
+}
+
+.content h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 1.5em 0 0.5em;
+}
+
+.content img {
+  border-radius: 8px;
+  margin: 2em 0;
+}
