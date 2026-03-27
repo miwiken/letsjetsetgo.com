@@ -1,76 +1,57 @@
 .footer {
-  background: var(--color-bg-alt);
-  border-top: 1px solid var(--color-border);
-  padding: 64px 0 32px;
-  margin-top: 96px;
-}
-
-.inner {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-}
-
-.brand {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  background: var(--navy);
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  padding: 32px 24px;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .logo {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--color-primary);
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.logoAccent {
+  color: var(--coral);
+}
+
+.logoDots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dotWhite {
+  background: transparent;
+  border: 1.2px solid #fff;
+}
+
+.dotTeal {
+  background: var(--teal);
+}
+
+.dotCoral {
+  background: var(--coral);
 }
 
 .tagline {
-  color: var(--color-text-muted);
-  font-size: 0.9rem;
-}
-
-.links {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.column h4 {
-  font-size: 0.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--color-text-muted);
-  margin-bottom: 4px;
-}
-
-.column a {
-  font-size: 0.9rem;
-  color: var(--color-text);
-  transition: color 0.15s;
-}
-
-.column a:hover {
-  color: var(--color-primary);
-}
-
-.bottom {
-  padding-top: 32px;
-  border-top: 1px solid var(--color-border);
-}
-
-.bottom p {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
-}
-
-@media (max-width: 768px) {
-  .links {
-    grid-template-columns: 1fr;
-  }
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 16px;
 }
