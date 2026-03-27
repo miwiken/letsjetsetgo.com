@@ -1,36 +1,18 @@
-import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 
 export function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={`container ${styles.inner}`}>
-        <div className={styles.brand}>
-          <span className={styles.logo}>Jet!Set!Go!</span>
-          <p className={styles.tagline}>Plan trips together. For free. Forever.</p>
-        </div>
-        <div className={styles.links}>
-          <div className={styles.column}>
-            <h4>Product</h4>
-            <Link to="/features">Features</Link>
-            <Link to="/pricing">Pricing</Link>
-            <a href="https://app.letsjetsetgo.com">Open App</a>
-          </div>
-          <div className={styles.column}>
-            <h4>Company</h4>
-            <Link to="/about">About</Link>
-            <Link to="/blog">Blog</Link>
-          </div>
-          <div className={styles.column}>
-            <h4>Legal</h4>
-            <Link to="/privacy">Privacy</Link>
-            <Link to="/terms">Terms</Link>
-          </div>
-        </div>
-        <div className={styles.bottom}>
-          <p>&copy; {new Date().getFullYear()} Jet!Set!Go! All rights reserved.</p>
-        </div>
+      <div className={styles.logo}>
+        <span className={styles.logoDots}>
+          <span className={`${styles.dot} ${styles.dotWhite}`} />
+          <span className={`${styles.dot} ${styles.dotTeal}`} />
+          <span className={`${styles.dot} ${styles.dotCoral}`} />
+        </span>
+        JET SET <span className={styles.logoAccent}>GO</span>
       </div>
+      <div className={styles.tagline}>The trip planner that gives you your group chat back.</div>
+      <p>&copy; {new Date().getFullYear()} JET SET GO. All rights reserved.</p>
     </footer>
   );
 }
