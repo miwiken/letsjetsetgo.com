@@ -421,61 +421,144 @@
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   .hero {
-    padding: 100px 20px 60px;
+    padding: 100px 20px 80px;
     min-height: auto;
   }
 
-  .heroCtas,
-  .finalCta .heroCtas {
-    flex-direction: column;
-    align-items: center;
+  .heroBadge {
+    font-size: 0.8rem;
+    padding: 6px 16px;
+    margin-bottom: 24px;
   }
 
-  .heroCtas :global(.btn),
-  .finalCta :global(.btn) {
+  .heroTitle {
+    font-size: 2.2rem;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+  }
+
+  .heroSub {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+
+  .heroCtas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
     width: 100%;
     max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .heroCtas :global(.btn) {
+    width: 100%;
     justify-content: center;
+    padding: 16px 24px;
+    font-size: 1rem;
+  }
+
+  .scrollHint {
+    display: none;
   }
 
   .travelers,
   .designers,
   .howItWorks,
   .socialProof {
-    padding: 72px 20px;
-  }
-
-  .featuresGrid,
-  .testimonials {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    padding: 64px 20px;
   }
 
   .storyBlock {
     padding: 4px 0 4px 20px;
+    font-size: 0.95rem;
+    margin-bottom: 40px;
   }
 
-  .featureCard {
-    padding-top: 24px;
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .featureCard h3 {
+    font-size: 1.15rem;
+  }
+
+  .featureCard p {
+    font-size: 0.9rem;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .steps::before {
-    left: 24px;
+    left: 20px;
   }
 
   .step {
-    gap: 20px;
+    gap: 16px;
   }
 
   .stepNumber {
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
-    font-size: 1.1rem;
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    font-size: 1rem;
+  }
+
+  .step h3 {
+    font-size: 1.15rem;
+  }
+
+  .step p {
+    font-size: 0.9rem;
+  }
+
+  .breakdownItem {
+    flex-direction: column;
+    gap: 4px;
   }
 
   .finalCta {
-    padding: 80px 20px;
+    padding: 72px 20px;
+  }
+
+  .finalCtaHeader {
+    font-size: 2rem;
+  }
+
+  .finalCtaSub {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+
+  .finalCta .heroCtas {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .finalCta :global(.btn) {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ctaGroup {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+
+  .heroSub {
+    font-size: 0.9rem;
   }
 }
 
